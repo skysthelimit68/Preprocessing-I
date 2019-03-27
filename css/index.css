@@ -165,6 +165,9 @@ h2 {
 h3 {
   font-size: 1.6rem;
 }
+h4 {
+  font-size: 1.1rem;
+}
 p {
   margin-bottom: 5px;
 }
@@ -243,6 +246,7 @@ ul li {
 }
 .resume-box {
   border-top: 1px solid #333;
+  margin-bottom: 20px;
 }
 .resume-box span {
   background-color: lightblue;
@@ -250,6 +254,13 @@ ul li {
   padding: 3px 5px;
   margin: 5px;
   line-height: 1.8;
+}
+.resume-box .resume-box-wrap {
+  padding-left: 4%;
+}
+.resume-box .resume-box-wrap h4 {
+  font-weight: 700;
+  margin: 15px 0;
 }
 .left {
   padding-right: 2%;
