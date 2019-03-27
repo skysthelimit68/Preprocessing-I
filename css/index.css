@@ -177,7 +177,7 @@ header {
   justify-content: flex-end;
   padding-right: 1%;
   width: 100%;
-  max-width: 860px;
+  max-width: 880px;
   margin: 10px auto;
 }
 @media (max-width: 800px) {
@@ -217,7 +217,7 @@ ul li {
 .container {
   background: white;
   width: 100%;
-  max-width: 860px;
+  max-width: 880px;
   margin: 10px auto;
   padding-top: 10px;
   border: 1px solid #999;
@@ -276,11 +276,13 @@ ul li {
   .container .top .top-right ul {
     flex-direction: row;
   }
-  .container .top .top-right ul li {
-    line-height: 1.6;
-  }
 }
-@media (max-width: 800px) and (max-width: 800px) {
+.container .top .top-right ul li {
+  line-height: 1.8;
+  color: #666666;
+  font-size: 0.9rem;
+}
+@media (max-width: 800px) {
   .container .top .top-right ul li {
     padding: 5px 10px;
   }
@@ -288,14 +290,15 @@ ul li {
     display: none;
   }
 }
-.container .top .top-right a {
+.container .top a {
+  color: #666666;
   text-decoration: none;
 }
-.container .summary {
+.summary {
   padding: 1% 3%;
 }
 @media (max-width: 800px) {
-  .container .summary {
+  .summary {
     padding: 1% 5%;
   }
 }
@@ -362,8 +365,19 @@ ul li {
   padding: 0 5%;
 }
 .resume-box .resume-box-wrap h4 {
-  font-weight: 700;
-  margin: 15px 0;
+  margin: 15px 0 0 0;
+}
+.resume-box .resume-box-wrap p.institute {
+  font-size: 0.9rem;
+  color: #555;
+  padding-left: 0;
+  padding-top: 0;
+}
+.resume-box .resume-box-wrap p {
+  padding: 3px 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 .left {
   padding-right: 2%;
