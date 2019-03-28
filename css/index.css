@@ -1,1 +1,403 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.8%;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1.2;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  background: #e8e8e8;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+p {
+  margin-bottom: 5px;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1%;
+  width: 100%;
+  max-width: 880px;
+  margin: 10px auto;
+}
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+    padding: 0;
+  }
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #333;
+}
+@media (max-width: 800px) {
+  header nav a {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+}
+ul li {
+  line-height: 1.5;
+}
+.container {
+  background: white;
+  width: 100%;
+  max-width: 880px;
+  margin: 10px auto;
+  padding-top: 10px;
+  border: 1px solid #999;
+  box-shadow: 0 0 15px #a5a2a2;
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 0;
+    margin: 0 2%;
+    width: 96%;
+  }
+}
+.container .top {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .container .top {
+    flex-direction: column;
+    padding: 20px 2%;
+  }
+}
+.container .top .top-left {
+  display: flex;
+  width: 70%;
+  padding: 2% 1% 15px 3%;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .container .top .top-left {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .top .top-right {
+  width: 30%;
+  padding: 0 3% 15px 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .container .top .top-right {
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+.container .top .top-right ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 800px) {
+  .container .top .top-right ul {
+    flex-direction: row;
+  }
+}
+.container .top .top-right ul li {
+  line-height: 1.8;
+  color: #666666;
+  font-size: 0.9rem;
+}
+@media (max-width: 800px) {
+  .container .top .top-right ul li {
+    padding: 5px 10px;
+  }
+  .container .top .top-right ul li span.list-inner {
+    display: none;
+  }
+}
+.container .top a {
+  color: #666666;
+  text-decoration: none;
+}
+.summary {
+  padding: 1% 3%;
+}
+@media (max-width: 800px) {
+  .summary {
+    padding: 1% 5%;
+  }
+}
+.li-fa {
+  margin-left: 5px;
+}
+.profile-pic {
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .profile-pic {
+    width: 60%;
+  }
+}
+.profile-pic img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile-nameTitle {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+@media (max-width: 800px) {
+  .profile-nameTitle {
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+  }
+}
+.main-resume {
+  display: flex;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .main-resume {
+    flex-direction: column;
+  }
+}
+.main-resume .resume-column {
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .main-resume .resume-column {
+    width: 100%;
+  }
+}
+.main-resume h3 {
+  padding: 0 5%;
+}
+.resume-box {
+   border-top: 2px solid #456545;
+   margin-bottom: 20px;
+}
+.resume-box span {
+  background-color: lightblue;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin: 5px 5px 5px 0;
+  line-height: 2.2;
+}
+.resume-box .resume-box-wrap {
+  padding: 0 5%;
+}
+.resume-box .resume-box-wrap h4 {
+  margin: 15px 0 0 0;
+}
+.resume-box .resume-box-wrap p.institute {
+  font-size: 0.9rem;
+  color: #555;
+  padding-left: 0;
+  padding-top: 0;
+}
+.resume-box .resume-box-wrap p {
+  padding: 3px 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.left {
+  padding-right: 2%;
+}
+@media (max-width: 800px) {
+  .left {
+    padding: 0;
+  }
+}
+.right {
+  padding-left: 2%;
+}
+@media (max-width: 800px) {
+  .right {
+    padding: 0;
+  }
+}
+footer {
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
