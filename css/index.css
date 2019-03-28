@@ -351,8 +351,8 @@ ul li {
   padding: 0 5%;
 }
 .resume-box {
-  border-top: 1px solid #333;
-  margin-bottom: 20px;
+   border-top: 2px solid #456545;
+   margin-bottom: 20px;
 }
 .resume-box span {
   background-color: lightblue;
